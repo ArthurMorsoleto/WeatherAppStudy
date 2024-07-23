@@ -1,0 +1,8 @@
+- buscar arquivos necessários para configuração inicial do projeto: drawables, sealed classes etc;
+- começar pelo pacote "data" para buscar informações da api de tempo
+- interface WeatherApi com uma suspend fun para buscar info
+    @GET
+    @Query lat
+    @Query long
+    : WeatherDTO
+- criar DTO para "segurar" a resposta da api
