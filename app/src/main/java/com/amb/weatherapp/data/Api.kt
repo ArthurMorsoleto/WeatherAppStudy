@@ -20,6 +20,6 @@ interface Api {
 
     companion object {
         private const val WEATHER_ENDPOINT =
-            "v1/forecast?hourly=temperature_2m,weathercode,relativehumidity_2m,windspeed_10m,pressure_msl"
+            "v1/forecast?current=temperature_2m,wind_speed_10m,weathercode,relative_humidity_2m"
     }
 }
