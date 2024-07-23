@@ -1,5 +1,6 @@
 package com.amb.weatherapp.data
 
+import com.amb.weatherapp.data.response.WeatherResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -15,7 +16,7 @@ interface Api {
     suspend fun getWeatherData(
         @Query("latitude") lat: Double,
         @Query("longitude") long: Double
-    )
+    ): WeatherResponse
 
     companion object {
         private const val WEATHER_ENDPOINT =
