@@ -2,7 +2,7 @@ package com.amb.weatherapp.data.response
 
 import com.squareup.moshi.Json
 
-data class WeatherData(
+data class WeatherDataDTO(
     val time: List<String>,
     @field:Json(name = "temperature_2m")
     val temperatures: List<Double>,
