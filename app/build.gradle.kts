@@ -85,7 +85,7 @@ dependencies {
 
     implementation(libs.lifecycle.viewmodel.compose)
 
-    // mockk
+    // tests
     testImplementation(libs.mockk)
-
+    testImplementation(libs.kotlinx.coroutines.test)
 }

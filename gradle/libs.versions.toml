@@ -16,6 +16,7 @@ retrofit = "2.9.0"
 interceptor = "5.0.0-alpha.3"
 viewModelCompose = "2.4.1"
 mockk = "1.13.2"
+kotlinxCoroutinesTest = "1.9.0-RC"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -47,6 +48,7 @@ interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref
 lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "viewModelCompose" }
 
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
