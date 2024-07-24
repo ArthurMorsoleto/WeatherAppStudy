@@ -84,4 +84,8 @@ dependencies {
     implementation(libs.interceptor)
 
     implementation(libs.lifecycle.viewmodel.compose)
+
+    // mockk
+    testImplementation(libs.mockk)
+
 }
