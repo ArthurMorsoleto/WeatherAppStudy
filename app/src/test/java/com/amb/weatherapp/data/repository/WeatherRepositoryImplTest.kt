@@ -33,11 +33,20 @@ class WeatherRepositoryImplTest {
     }
 
     @Test
-    fun `when get weather data is called then should return response success`() = runTest {
+    fun `when get weather data is called then response success should be returned`() = runTest {
         coEvery { api.getWeatherData(any(), any()) } returns weatherResponse
 
         val response = subject.getWeatherData(10.0, 10.0)
 
         assertEquals(23.0, response.data?.temperatureCelsius)
+    }
+
+    @Test
+    fun `when get weather data is called then response error should be returned`() = runTest {
+        coEvery { api.getWeatherData(any(), any()) } throws Exception("error")
+
+        val response = subject.getWeatherData(10.0, 10.0)
+
+        assertEquals(response.message, "error")
     }
 }
