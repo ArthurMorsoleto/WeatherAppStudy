@@ -84,4 +84,8 @@ dependencies {
     implementation(libs.interceptor)
 
     implementation(libs.lifecycle.viewmodel.compose)
+
+    // tests
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
